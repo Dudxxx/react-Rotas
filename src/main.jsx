@@ -12,6 +12,8 @@ import { Estado1 } from './pages/Estado/Estado1'
 import { ComEstado } from './pages/Estado/ComEstado'
 import { CampoTexto } from './pages/Estado/CampoTexto'
 import { ContadorMM } from './pages/Estado/ContadorMM'
+import { ComunicacaoIndireta } from './pages/Comunicacao/ComunicacaoIndireta'
+import { ComunicacaoDireta } from './pages/Comunicacao/ComunicacaoDireta'
 
 
 
@@ -35,6 +37,8 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path='comEstado' element={<ComEstado/>} />
     <Route path='campoTexto' element={<CampoTexto/>}/>
     <Route path='contadorMM' element={<ContadorMM/>}/>
+    <Route path='comunicacaoD' element={<ComunicacaoDireta/>}/>
+    <Route path='comunicacaoI' element={<ComunicacaoIndireta/>}/>
     <Route path='*' element={<Pagina404/>} />
   </Route>
   

@@ -1,4 +1,4 @@
-import { IconAddressBook, IconHome, IconInfoCircle, IconRouteAltLeft, IconSquareRoundedNumber1, IconSquareRoundedNumber2, IconSquareRoundedNumber3, IconSquareRoundedNumber4 } from "@tabler/icons-react";
+import { IconAddressBook, IconHome, IconInfoCircle, IconMessageDown, IconMessageUp, IconRouteAltLeft, IconSquareRoundedNumber1, IconSquareRoundedNumber2, IconSquareRoundedNumber3, IconSquareRoundedNumber4 } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
 
 export function Menu() {
@@ -57,10 +57,19 @@ export function Menu() {
           <IconSquareRoundedNumber4 />
           Contador Mais ou Menos
         </NavLink>
+        <span className="text-white ml-6">Comunicação</span>
+        <NavLink to="comunicacaoD" className={getEstilo}>
+          <IconMessageDown/>
+          Comunicação Direta
+        </NavLink>
+        <NavLink to="comunicacaoI" className={getEstilo}>
+          <IconMessageUp/>
+          Comunicação Indireta
+        </NavLink>
       </nav>
 
       <footer className="absolute bottom-0 p-2 flex justify-center">
-        <span>Desenvolvimento Web 2</span>
+        <span className="text-white text-xs">Desenvolvimento Web 2</span>
       </footer>
     </aside>
   );
