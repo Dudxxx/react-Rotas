@@ -14,6 +14,8 @@ import { CampoTexto } from './pages/Estado/CampoTexto'
 import { ContadorMM } from './pages/Estado/ContadorMM'
 import { ComunicacaoIndireta } from './pages/Comunicacao/ComunicacaoIndireta'
 import { ComunicacaoDireta } from './pages/Comunicacao/ComunicacaoDireta'
+import { UseRef } from './pages/HooksBasicos/UseRef'
+import { UseEffect } from './pages/HooksBasicos/UseEffect'
 
 
 
@@ -39,6 +41,8 @@ const rotas = createBrowserRouter(createRoutesFromElements(
     <Route path='contadorMM' element={<ContadorMM/>}/>
     <Route path='comunicacaoD' element={<ComunicacaoDireta/>}/>
     <Route path='comunicacaoI' element={<ComunicacaoIndireta/>}/>
+    <Route path='useRef' element={<UseRef/>}/>
+    <Route path='useEffect' element={<UseEffect/>}/>
     <Route path='*' element={<Pagina404/>} />
   </Route>
   

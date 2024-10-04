@@ -6,8 +6,8 @@ export function Menu() {
   const getEstilo = (props) => {
    
     let estilo =
-      "flex gap-3 text-slate-700 px-3 py-4 hover:bg-slate-800 hover:text-slate-200 ";
-    let ativo = "border-r-4 border-solid border-slate-800 border-white"
+      "flex gap-3 text-slate-700 text-xs px-3 py-4 hover:bg-slate-800 hover:text-slate-200 h-12 text-center";
+    let ativo = "border-r-4 border-solid border-slate-700 border-white h-12 text-xs text-center"
 
     // let final
     // if (props.isActive){
@@ -57,7 +57,7 @@ export function Menu() {
           <IconSquareRoundedNumber4 />
           Contador Mais ou Menos
         </NavLink>
-        <span className="text-white ml-6">Comunicação</span>
+        <span className="text-white ml-6 mt-3">Comunicação</span>
         <NavLink to="comunicacaoD" className={getEstilo}>
           <IconMessageDown/>
           Comunicação Direta
@@ -66,11 +66,19 @@ export function Menu() {
           <IconMessageUp/>
           Comunicação Indireta
         </NavLink>
-      </nav>
 
-      <footer className="absolute bottom-0 p-2 flex justify-center">
-        <span className="text-white text-xs">Desenvolvimento Web 2</span>
-      </footer>
+        <span className="text-white ml-6 mt-3">Hooks</span>
+        <NavLink to="useRef" className={getEstilo}>
+          <IconMessageDown/>
+          Use Ref
+        </NavLink>
+        <NavLink to="useEffect" className={getEstilo}>
+          <IconMessageUp/>
+          Use Effect
+        </NavLink>
+        
+        
+      </nav>
     </aside>
   );
 }

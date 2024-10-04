@@ -6,7 +6,9 @@ export function ComunicacaoIndireta() {
 
     return (
         <Pagina titulo="Comunicação Indireta" subtitulo="Conceito de Comunicação com React">
-            <PaiIndireta></PaiIndireta>
+            <PaiIndireta>
+                
+            </PaiIndireta>
         </Pagina>
     )
 }
