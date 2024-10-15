@@ -76,6 +76,11 @@ export function Menu() {
           <IconMessageUp/>
           Use Effect
         </NavLink>
+        <span className="text-white ml-6 mt-3">Tradutor</span>
+        <NavLink to="tradutor" className={getEstilo}>
+          <IconMessageUp/>
+          Tradutor
+        </NavLink>
         
         
       </nav>
